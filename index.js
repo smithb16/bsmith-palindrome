@@ -35,6 +35,3 @@ function Phrase(content) {
     return t.join("");
   };
 }
-
-let test = new Phrase("");
-console.log(test.isPalindrome());
