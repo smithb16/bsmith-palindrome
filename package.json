@@ -1,6 +1,6 @@
 {
   "name": "bsmith-palindrome",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Palindrome detector",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsmith/bsmith-palindrome.git"
+    "url": "git+https://github.com/smithb16/bsmith-palindrome.git"
   },
   "keywords": [
     "palindrome",
@@ -18,7 +18,7 @@
   "author": "Ben Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bsmith/bsmith-palindrome/issues"
+    "url": "https://github.com/smithb16/bsmith-palindrome/issues"
   },
-  "homepage": "https://github.com/bsmith/bsmith-palindrome#readme"
+  "homepage": "https://github.com/smithb16/bsmith-palindrome#readme"
 }

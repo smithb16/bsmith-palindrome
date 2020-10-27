@@ -22,7 +22,11 @@ function Phrase(content) {
   };
 
   this.isPalindrome = function () {
-    return this.processedContent() === this.processedContent().reverse();
+    if (this.processedContent()) {
+      return this.processedContent() === this.processedContent().reverse();
+    } else {
+      return false;
+    }
   };
 
   this.letters = function () {
@@ -31,3 +35,6 @@ function Phrase(content) {
     return t.join("");
   };
 }
+
+let test = new Phrase("");
+console.log(test.isPalindrome());
