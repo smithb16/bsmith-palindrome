@@ -1,3 +1,5 @@
+module.exports = Phrase;
+
 // Reverses a string
 String.prototype.reverse = function () {
   return Array.from(this).reverse().join("");
@@ -16,18 +18,19 @@ function Phrase(content) {
   this.content = content;
 
   this.processedContent = function () {
-    return this.content.toLowerCase();
+    return this.letters().toLowerCase();
   };
 
   this.isPalindrome = function () {
     return this.processedContent() === this.processedContent().reverse();
   };
+
+  this.letters = function () {
+    const letterRegex = /[a-z]/gi;
+    let t = this.content.match(letterRegex) || [];
+    return t.join("");
+  };
 }
 
-let blank = "";
-let notBlank = "words";
-console.log("blank.isBlank(): ", blank.isBlank());
-console.log("notBlank.isBlank(): ", notBlank.isBlank());
-
-let a = [1, 2, 3, 4];
-console.log("a.last(): ", a.last());
+val = new Phrase("racecar");
+console.log("val.letters(): ", val.letters());
