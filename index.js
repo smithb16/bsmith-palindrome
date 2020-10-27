@@ -31,6 +31,3 @@ function Phrase(content) {
     return t.join("");
   };
 }
-
-val = new Phrase("racecar");
-console.log("val.letters(): ", val.letters());

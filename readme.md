@@ -9,7 +9,7 @@ $ npm install --global bsmith-palindrome
 $ vim test.js
 let Phrase = require("bsmith-palindrome");
 let napoleonsLament = new Phrase("Able was I, ere I saw Elba.");
-console.log(napoleonsLament.palindrome());
+console.log(napoleonsLament.isPalindrome());
 $ node test.js
 true
 ```
